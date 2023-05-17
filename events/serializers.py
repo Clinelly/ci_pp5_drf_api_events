@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Events
+from .models import Event
 
 
 class EventSerializer(serializers.ModelSerializer):
@@ -28,7 +28,7 @@ class EventSerializer(serializers.ModelSerializer):
         return request.user == obj.owner
 
     class Meta:
-        model = Events
+        model = Event
         fields = [
             'id', 'owner', 'created_at', 'updated_at', 'title',
             'description', 'location', 'start_time', 'end_time', 'image',
