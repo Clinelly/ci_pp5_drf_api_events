@@ -28,7 +28,6 @@ class ProfileList(generics.ListAPIView):
         'owner__following__created_at',
         'owner__followed__created_at',
         'owner__attending__created_at',
-
     ]
 
 
