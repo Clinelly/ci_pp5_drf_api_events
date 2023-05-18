@@ -16,5 +16,5 @@ class AttendingList(generics.ListCreateAPIView):
 
 class AttendingDetail(generics.RetrieveDestroyAPIView):
     permission_classes = [IsOwnerOrReadOnly]
-    serializer_class = AttendingSerializer()
+    serializer_class = AttendingSerializer
     queryset = Attending.objects.all()
