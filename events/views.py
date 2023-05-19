@@ -20,6 +20,14 @@ class EventList(generics.ListCreateAPIView):
         likes_count=Count('likes', distinct=True),
         attending_count=Count('attending', distinct=True)
     ).order_by('-created_at')
+    filter_backends = [
+        filters.OrderingFilter,
+        filters.SearchFilter
+    ]
+    search_fields = [
+        "owner__username",
+        "title",
+    ]
     ordering_fields = [
         'attending_count',
         'likes_count',
