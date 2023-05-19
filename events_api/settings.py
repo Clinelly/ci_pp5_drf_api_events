@@ -63,8 +63,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['localhost', 'clinelly-ci-pp5-events-api.herokuapp.com']
-
+ALLOWED_HOSTS = ['8000-clinelly-cipp5drfapieve-vusmxe0lr87.ws-eu97.gitpod.io', 'localhost', 'clinelly-ci-pp5-events-api.herokuapp.com']
 
 # Application definition
 
