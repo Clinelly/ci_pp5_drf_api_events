@@ -1,108 +1,138 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Event API in DRF
 
-Welcome Clinelly,
+**Developer: Stuart Wall**
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+💻 [Live link]()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+This repository contains the API set up using Django REST Framework for the Tick It front-end application ([repository here]() and [live website here]())
 
-## Gitpod Reminders
+## Table of Contents
+  - [User Stories](#user-stories)
+  - [Database](#database)
+  - [Technologies Used](#technologies-used)
+  - [Validation](#validation)
+  - [Testing](#testing)
+  - [Credits](#credits)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Stories
 
-`python3 -m http.server`
+The back-end section of the project focuses on its administration side and covers a single user story:
+- As admin, I want to be able to create, edit and delete users, events, comments, likes, attendance and followers; so that I can have complete control over the content of the application.  If necessary, I can remove any inappropriate content and add my own directly.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## Database
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The following models were created to represent the database model structure of the application:
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+#### User Model
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Event Model
 
-------
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Comment Model
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### Attending Model
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#### Like Model
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#### Follower Model
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### Profile Model
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+##### Back to [top](#table-of-contents)
 
-------
 
-## FAQ about the uptime script
+## Technologies Used
 
-**Why have you added this script?**
+### Languages & Frameworks
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- Python
+- Django
 
-**How will this affect me?**
+### Libraries & Tools
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- [Cloudinary](https://cloudinary.com/)
+- [Graphviz](https://dreampuf.github.io/GraphvizOnline/)
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [Gitpod](https://gitpod.io/workspaces)
+- [Heroku](https://heroku.com)
+- [Django REST Framework](https://www.django-rest-framework.org/)
+- [Django AllAuth](https://django-allauth.readthedocs.io/en/latest/index.html)
+- [Psycopg2](https://www.psycopg.org/docs/)
+- [ElephantSQL](https://www.elephantsql.com/)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+##### Back to [top](#table-of-contents)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+## Validation
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Python Validation
 
-**Can I opt out?**
+PEP8 was unavailable at the time of creating this project so [Pycodestyle](https://pypi.org/project/pycodestyle/) was used instead to continually check all Python code for errors and warnings.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Testing
 
-**Anything more?**
+The following tests were carried out on the app:
+1. Manual testing of user stories
+2. Automated testing
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Manual testing of user stories
 
----
+- As an admin, I want to be able to create, edit and delete the users, posts, comments and likes, so that I can have a control over the content of the application and remove any potential inappropriate content
 
-Happy coding!
+**Test** | **Action** | **Expected Result** | **Actual Result**
+-------- | ------------------- | ------------------- | -----------------
+
+
+In addition: events, comments and likes can be created by logged-in users only. Users can only update or delete the content which was created by themselves.
+
+<details><summary>Screenshots - USER</summary>
+    <details><summary>Create user</summary>
+
+    </details>
+</details>
+
+
+
+### Automated testing
+
+Automated testing was done using the Django Rest Framework APITestCase.
+
+- Tests summary
+
+<details><summary>Individual app report</summary>
+
+</details>
+
+<details><summary>Combined report</summary>
+
+</details>
+
+
+##### Back to [top](#table-of-contents)
+
+
+## Credits
+
+
+### Code
+
+This project was created based on the Code Institute's Django REST API walkthrough project ['Moments'](https://github.com/Code-Institute-Solutions/drf-api).
+
+##### Back to [top](#table-of-contents)
