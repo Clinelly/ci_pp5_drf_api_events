@@ -35,6 +35,9 @@ class EventList(generics.ListCreateAPIView):
         'comment_count',
     ]
 
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
+
 
 class EventDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = EventSerializer
