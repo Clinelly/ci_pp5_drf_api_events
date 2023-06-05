@@ -14,6 +14,8 @@ class EventSerializer(serializers.ModelSerializer):
     likes_count = serializers.ReadOnlyField()
     comments_count = serializers.ReadOnlyField()
     attending_count = serializers.ReadOnlyField()
+    start_time = serializers.DateTimeField()
+    end_time = serializers.DateTimeField()
 
     def validate_image(self, value):
         if value.size > 1024 * 1024 * 2:
