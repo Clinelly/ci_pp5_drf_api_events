@@ -14,7 +14,7 @@ class Event(models.Model):
     end_time = models.DateTimeField(blank=True)
     image = models.ImageField(
         upload_to='images/',
-        default='../default_post_ob4ttj'
+        default='../default_post_kgrutj'
     )
 
     class Meta:
