@@ -13,7 +13,8 @@ class Event(models.Model):
     start_time = models.DateTimeField(blank=True)
     end_time = models.DateTimeField(blank=True)
     image = models.ImageField(
-        upload_to='images/', default='../default_post_ckdmjc'
+        upload_to='images/',
+        default='../default_post_ob4ttj'
     )
 
     class Meta:
