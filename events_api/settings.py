@@ -123,6 +123,10 @@ else:
         r"^https://.*\.gitpod\.io$",
     ]
 
+CORS_ALLOWED_ORIGINS = [
+    'https://clinelly-ci-pp5-events-fe.herokuapp.com',
+]
+
 CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'events_api.urls'
