@@ -3,8 +3,6 @@ from .models import Event
 from rest_framework import status
 from rest_framework.test import APITestCase
 
-# Create your tests here.
-
 
 class EventListViewTests(APITestCase):
     def setUp(self):
@@ -15,11 +13,12 @@ class EventListViewTests(APITestCase):
         Event.objects.create(
             owner=user,
             title="Event Title",
-            start_time="2023-01-01 12:00",
-            end_time="2023-01-02 12:00"
-            )
+            start_time="2023-01-01T12:00:00Z",
+            end_time="2023-01-02T12:00:00Z"
+        )
         response = self.client.get('/events/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data), 1)  
 
     def test_logged_in_user_can_create_event(self):
         self.client.login(username="user1", password="pass1")
@@ -37,7 +36,7 @@ class EventDetailViewTests(APITestCase):
     def setUp(self):
         user1 = User.objects.create_user(username='user1', password='pass1')
         user2 = User.objects.create_user(username='user2', password='pass2')
-        Event.objects.create(
+        event1 = Event.objects.create(
             owner=user1,
             title='Event 1 title',
             description='Event 1 description',
@@ -53,22 +52,32 @@ class EventDetailViewTests(APITestCase):
         )
 
     def test_can_retrieve_event_using_valid_id(self):
-        response = self.client.get('/events/1/')
-        self.assertEqual(response.data['title'], 'Event 1 title')
+        response = self.client.get('/events/1')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data['title'], 'Event 1 title')
 
     def test_cant_retrieve_event_using_invalid_id(self):
-        response = self.client.get('/events/999/')
+        response = self.client.get('/events/999')
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_user_can_update_own_event(self):
         self.client.login(username='user1', password='pass1')
-        response = self.client.put('/events/1/', {'title': 'Event 1 title'})
-        event = Event.objects.filter(pk=1).first()
+        response = self.client.put('/events/1', {'title': 'Event 1 new title'})
+        event = Event.objects.get(pk=1)
         self.assertEqual(event.title, 'Event 1 new title')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_user_cant_update_another_users_event(self):
         self.client.login(username='user1', password='pass1')
-        response = self.client.put('/events/2/', {'title': 'Event 2 new title'})
+        response = self.client.put('/events/2', {'title': 'Event 2 new title'})
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
+    def test_user_can_delete_own_event(self):
+        self.client.login(username='user1', password='pass1')
+        response = self.client.delete('/events/1')
+        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
+
+    def test_user_cant_delete_another_users_event(self):
+        self.client.login(username='user1', password='pass1')
+        response = self.client.delete('/events/2')
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
