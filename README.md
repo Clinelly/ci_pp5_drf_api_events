@@ -23,35 +23,68 @@ The back-end section of the project focuses on its administration side and cover
 ## Database
 
 The following models were created to represent the database model structure of the application:
-
+<img src="docs/images/graphviz.png">
 
 #### User Model
-
-
-
+- The User model contains information about the user. It is part of the Django allauth library.
+- One-to-one relation with the Profile model owner field
+- ForeignKey relation with the Event model owner
+- ForeignKey relation with the Comment model owner
+- ForeignKey relation with the Like model owner
+- ForeignKey relation with the Attending model owner
+- ForeignKey relation with the Following model owner
 
 #### Event Model
-
+- The Event model contains information about a hosted event.
+- owner: ForeignKey model with User.
+- created_at: DateTime Field
+- updated_at: DateTime Field
+- title: Character Field
+- description: Text Field
+- location: Text Field
+- start_time: DateTime Field
+- end_time: DateTime Field
+- image: Image Field
 
 
 #### Comment Model
-
+- The Comment model contains information about additional user posts on a specific event.
+- owner: ForeignKey model with User.
+- event: ForeignKey model with Event.
+- created_at: DateTime Field
+- updated_at: DateTime Field
+- content: Text Field
 
 
 #### Attending Model
-
+- The Attending model contains information about users marking themselves as attending an event.
+- owner: ForeignKey model with User.
+- event: ForeignKey model with Event. Related name: 'attending'
+- created_at: DateTime Field
 
 
 #### Like Model
-
+- The Attending model contains information about users 'liking' an event.
+- owner: ForeignKey model with User.
+- event: ForeignKey model with Event. Related name: 'likes'
+- created_at: DateTime Field
 
 
 #### Follower Model
-
+- The Follower model contains information about users 'following' another user profile.
+- owner: ForeignKey model with User. Related name: "following"
+- owner: ForeignKey model with User. Related name: "followed"
+- created_at: DateTime Field
 
 
 #### Profile Model
-
+- The Profile model contains information about a user.
+- owner: ForeignKey model with User.
+- created_at: DateTime Field
+- updated_at: DateTime Field
+- name: Character Field
+- content: Text Field
+- image: Image Field
 
 ##### Back to [top](#table-of-contents)
 
@@ -84,7 +117,7 @@ The following models were created to represent the database model structure of t
 ### Python Validation
 
 PEP8 was unavailable at the time of creating this project so [Pycodestyle](https://pypi.org/project/pycodestyle/) was used instead to continually check all Python code for errors and warnings.
-
+Additonally [PeP8CI] (https://pep8ci.herokuapp.com/#) was also used to validate the code.
 
 ## Testing
 

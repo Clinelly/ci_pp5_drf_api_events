@@ -91,6 +91,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'dj_rest_auth.registration',
     'corsheaders',
+    'django_extensions',
+    'pydot',
+    'pyparsing',
 
 
     'attending',
@@ -196,6 +199,11 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
 
 
 # Static files (CSS, JavaScript, Images)
