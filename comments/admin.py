@@ -1,3 +1,16 @@
+"""
+A module for admin in the attending app
+"""
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.contrib import admin
 
-# Register your models here.
+# Internal:
+from .models import Comment
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+"""
+Register admin for the comments app
+"""
+admin.site.register(Comment)
