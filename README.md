@@ -165,6 +165,56 @@ Content can only be updated or deleted by their creators.
     </details>
 </details>
 
+<details><summary>Screenshots - PROFILE</summary>
+    <details><summary>Create profile</summary>
+      <img src="docs/images/create_profile_1">
+      <img src="docs/images/create_profile_2">
+    </details>
+    <details><summary>Edit profile</summary>
+      <img src="docs/images/edit_profile_1">
+      <img src="docs/images/edit_profile_2">
+    </details>
+    <details><summary>Delete profile</summary>
+      <img src="docs/images/delete_profile_1">
+      <img src="docs/images/delete_profile_2">
+      <img src="docs/images/delete_profile_3">
+    </details>
+</details>
+
+<details><summary>Screenshots - EVENT</summary>
+    <details><summary>Create event</summary>
+      <img src="docs/images/create_event_1">
+      <img src="docs/images/create_event_2">
+      <img src="docs/images/create_event_3">
+    </details>
+    <details><summary>Edit event</summary>
+      <img src="docs/images/edit_event_1">
+      <img src="docs/images/edit_event_2">
+    </details>
+    <details><summary>Delete event</summary>
+      <img src="docs/images/delete_event_1">
+      <img src="docs/images/delete_event_2">
+      <img src="docs/images/delete_event_3">
+    </details>
+</details>
+
+<details><summary>Screenshots - COMMENTS </summary>
+    <details><summary>Create comment </summary>
+      <img src="docs/images/create_comment_1">
+      <img src="docs/images/create_comment_2">
+      <img src="docs/images/create_comment_3">
+    </details>
+    <details><summary>Edit comment</summary>
+      <img src="docs/images/edit_comment_1">
+      <img src="docs/images/edit_comment_2">
+    </details>
+    <details><summary>Delete comment</summary>
+      <img src="docs/images/delete_comment_1">
+      <img src="docs/images/delete_comment_2">
+      <img src="docs/images/delete_comment_3">
+    </details>
+</details>
+
 
 
 ### Automated testing
