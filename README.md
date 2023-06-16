@@ -215,6 +215,45 @@ Content can only be updated or deleted by their creators.
     </details>
 </details>
 
+<details><summary>Screenshots - FOLLOWERS </summary>
+    <details><summary>Create follower </summary>
+      <img src="docs/images/create_follower_1">
+      <img src="docs/images/create_follower_2">
+      <img src="docs/images/create_follower_3">
+    </details>
+    <details><summary>Delete follower</summary>
+      <img src="docs/images/delete_follower_1">
+      <img src="docs/images/delete_follower_2">
+      <img src="docs/images/delete_follower_3">
+    </details>
+</details>
+
+<details><summary>Screenshots - LIKES </summary>
+    <details><summary>Create like </summary>
+      <img src="docs/images/create_like_1">
+      <img src="docs/images/create_like_2">
+      <img src="docs/images/create_like_3">
+    </details>
+    <details><summary>Delete like</summary>
+      <img src="docs/images/delete_like_1">
+      <img src="docs/images/delete_like_2">
+      <img src="docs/images/delete_like_3">
+    </details>
+</details>
+
+<details><summary>Screenshots - ATTENDING </summary>
+    <details><summary>Create attending </summary>
+      <img src="docs/images/create_attending_1">
+      <img src="docs/images/create_attending_2">
+      <img src="docs/images/create_attending_3">
+    </details>
+    <details><summary>Delete attending</summary>
+      <img src="docs/images/delete_attending_1">
+      <img src="docs/images/delete_attending_2">
+      <img src="docs/images/delete_attending_3">
+    </details>
+</details>
+
 
 
 ### Automated testing
