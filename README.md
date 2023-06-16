@@ -131,13 +131,37 @@ The following tests were carried out on the app:
 
 **Test** | **Action** | **Expected Result** | **Actual Result**
 -------- | ------------------- | ------------------- | -----------------
+User | Create, update & delete user | A user can be created, edited or deleted | Works as expected
+User | Change permissions | User permissions can be updated | Works as expected
+Profile | Create, update & delete | User profile can be created, edited or deleted | Works as expected
+Event | Create, update & delete | A Task can be created, edited or deleted | Works as expected
+Comment | Create, update & delete | A comment can be created, edited or deleted | Works as expected
+Follower | Create & delete |  A Follow relationship between Users can be created or deleted | Works as expected
+Like | Create & delete | A Like can be created, edited or deleted | Works as expected
+Attending | Create & delete | An Attending tag can be created or deleted | Works as expected
 
+In addition, only logged in users can:
+- Create/Update/Delete Events and Comments.
+- Like/Unlike or Attend/Unattend events.
+- Follow/ Unfollow other users.
 
-In addition: events, comments and likes can be created by logged-in users only. Users can only update or delete the content which was created by themselves.
+Content can only be updated or deleted by their creators.
 
 <details><summary>Screenshots - USER</summary>
     <details><summary>Create user</summary>
-
+      <img src="docs/images/add_user_1">
+      <img src="docs/images/add_user_2">
+      <img src="docs/images/add_user_3">
+    </details>
+    <details><summary>Edit user</summary>
+      <img src="docs/images/edit_user_1">
+      <img src="docs/images/edit_user_2">
+      <img src="docs/images/edit_user_3">
+    </details>
+    <details><summary>Delete user</summary>
+      <img src="docs/images/delete_user_1">
+      <img src="docs/images/delete_user_2">
+      <img src="docs/images/delete_user_3">
     </details>
 </details>
 
