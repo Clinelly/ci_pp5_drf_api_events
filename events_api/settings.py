@@ -37,7 +37,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS':
         'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
-    'DATETIME_FORMAT': '%d %b %Y',
+    'DATETIME_FORMAT': '%d %b %Y %H %M',
 }
 if 'DEV' not in os.environ:
     REST_FRAMEWORK['DEFAULT_RENDERER_CLASSES'] = [
@@ -65,7 +65,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-    '8000-clinelly-cipp5drfapieve-zpk8e8a2x4l.ws-eu99.gitpod.io',
+    '8000-clinelly-cipp5drfapieve-zpk8e8a2x4l.ws-eu100.gitpod.io',
     'localhost',
     os.environ.get('ALLOWED_HOST'),
     ]
