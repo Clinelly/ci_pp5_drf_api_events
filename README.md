@@ -2,9 +2,9 @@
 
 **Developer: Stuart Wall**
 
-💻 [Live link]()
+💻 [Live link](https://clinelly-ci-pp5-events-api.herokuapp.com/)
 
-This repository contains the API set up using Django REST Framework for the Tick It front-end application ([repository here]() and [live website here]())
+This repository contains the API set up using Django REST Framework for the Event Horizon front-end application ([repository here](https://github.com/Clinelly/ci_pp5_react_events) and [live website here](https://clinelly-ci-pp5-events-fe.herokuapp.com/))
 
 ## Table of Contents
   - [User Stories](#user-stories)
@@ -149,108 +149,108 @@ Content can only be updated or deleted by their creators.
 
 <details><summary>Screenshots - USER</summary>
     <details><summary>Create user</summary>
-      <img src="docs/images/add_user_1">
-      <img src="docs/images/add_user_2">
-      <img src="docs/images/add_user_3">
+      <img src="docs/images/add_user_1.png">
+      <img src="docs/images/add_user_2.png">
+      <img src="docs/images/add_user_3.png">
     </details>
     <details><summary>Edit user</summary>
-      <img src="docs/images/edit_user_1">
-      <img src="docs/images/edit_user_2">
-      <img src="docs/images/edit_user_3">
+      <img src="docs/images/edit_user_1.png">
+      <img src="docs/images/edit_user_2.png">
+      <img src="docs/images/edit_user_3.png">
     </details>
     <details><summary>Delete user</summary>
-      <img src="docs/images/delete_user_1">
-      <img src="docs/images/delete_user_2">
-      <img src="docs/images/delete_user_3">
+      <img src="docs/images/delete_user_1.png">
+      <img src="docs/images/delete_user_2.png">
+      <img src="docs/images/delete_user_3.png">
     </details>
 </details>
 
 <details><summary>Screenshots - PROFILE</summary>
     <details><summary>Create profile</summary>
-      <img src="docs/images/create_profile_1">
-      <img src="docs/images/create_profile_2">
+      <img src="docs/images/create_profile_1.png">
+      <img src="docs/images/create_profile_2.png">
     </details>
     <details><summary>Edit profile</summary>
-      <img src="docs/images/edit_profile_1">
-      <img src="docs/images/edit_profile_2">
+      <img src="docs/images/edit_profile_1.png">
+      <img src="docs/images/edit_profile_2.png">
     </details>
     <details><summary>Delete profile</summary>
-      <img src="docs/images/delete_profile_1">
-      <img src="docs/images/delete_profile_2">
-      <img src="docs/images/delete_profile_3">
+      <img src="docs/images/delete_profile_1.png">
+      <img src="docs/images/delete_profile_2.png">
+      <img src="docs/images/delete_profile_3.png">
     </details>
 </details>
 
 <details><summary>Screenshots - EVENT</summary>
     <details><summary>Create event</summary>
-      <img src="docs/images/create_event_1">
-      <img src="docs/images/create_event_2">
-      <img src="docs/images/create_event_3">
+      <img src="docs/images/create_event_1.png">
+      <img src="docs/images/create_event_2.png">
+      <img src="docs/images/create_event_3.png">
     </details>
     <details><summary>Edit event</summary>
-      <img src="docs/images/edit_event_1">
-      <img src="docs/images/edit_event_2">
+      <img src="docs/images/edit_event_1.png">
+      <img src="docs/images/edit_event_2.png">
     </details>
     <details><summary>Delete event</summary>
-      <img src="docs/images/delete_event_1">
-      <img src="docs/images/delete_event_2">
-      <img src="docs/images/delete_event_3">
+      <img src="docs/images/delete_event_1.png">
+      <img src="docs/images/delete_event_2.png">
+      <img src="docs/images/delete_event_3.png">
     </details>
 </details>
 
 <details><summary>Screenshots - COMMENTS </summary>
     <details><summary>Create comment </summary>
-      <img src="docs/images/create_comment_1">
-      <img src="docs/images/create_comment_2">
-      <img src="docs/images/create_comment_3">
+      <img src="docs/images/create_comment_1.png">
+      <img src="docs/images/create_comment_2.png">
+      <img src="docs/images/create_comment_3.png">
     </details>
     <details><summary>Edit comment</summary>
-      <img src="docs/images/edit_comment_1">
-      <img src="docs/images/edit_comment_2">
+      <img src="docs/images/edit_comment_1.png">
+      <img src="docs/images/edit_comment_2.png">
     </details>
     <details><summary>Delete comment</summary>
-      <img src="docs/images/delete_comment_1">
-      <img src="docs/images/delete_comment_2">
-      <img src="docs/images/delete_comment_3">
+      <img src="docs/images/delete_comment_1.png">
+      <img src="docs/images/delete_comment_2.png">
+      <img src="docs/images/delete_comment_3.png">
     </details>
 </details>
 
 <details><summary>Screenshots - FOLLOWERS </summary>
     <details><summary>Create follower </summary>
-      <img src="docs/images/create_follower_1">
-      <img src="docs/images/create_follower_2">
-      <img src="docs/images/create_follower_3">
+      <img src="docs/images/create_follower_1.png">
+      <img src="docs/images/create_follower_2.png">
+      <img src="docs/images/create_follower_3.png">
     </details>
     <details><summary>Delete follower</summary>
-      <img src="docs/images/delete_follower_1">
-      <img src="docs/images/delete_follower_2">
-      <img src="docs/images/delete_follower_3">
+      <img src="docs/images/delete_follower_1.png">
+      <img src="docs/images/delete_follower_2.png">
+      <img src="docs/images/delete_follower_3.png">
     </details>
 </details>
 
 <details><summary>Screenshots - LIKES </summary>
     <details><summary>Create like </summary>
-      <img src="docs/images/create_like_1">
-      <img src="docs/images/create_like_2">
-      <img src="docs/images/create_like_3">
+      <img src="docs/images/create_like_1.png">
+      <img src="docs/images/create_like_2.png">
+      <img src="docs/images/create_like_3.png">
     </details>
     <details><summary>Delete like</summary>
-      <img src="docs/images/delete_like_1">
-      <img src="docs/images/delete_like_2">
-      <img src="docs/images/delete_like_3">
+      <img src="docs/images/delete_like_1.png">
+      <img src="docs/images/delete_like_2.png">
+      <img src="docs/images/delete_like_3.png">
     </details>
 </details>
 
 <details><summary>Screenshots - ATTENDING </summary>
     <details><summary>Create attending </summary>
-      <img src="docs/images/create_attending_1">
-      <img src="docs/images/create_attending_2">
-      <img src="docs/images/create_attending_3">
+      <img src="docs/images/create_attending_1.png">
+      <img src="docs/images/create_attending_2.png">
+      <img src="docs/images/create_attending_3.png">
     </details>
     <details><summary>Delete attending</summary>
-      <img src="docs/images/delete_attending_1">
-      <img src="docs/images/delete_attending_2">
-      <img src="docs/images/delete_attending_3">
+      <img src="docs/images/delete_attending_1.png">
+      <img src="docs/images/delete_attending_2.png">
+      <img src="docs/images/delete_attending_3.png">
     </details>
 </details>
 
@@ -258,17 +258,9 @@ Content can only be updated or deleted by their creators.
 
 ### Automated testing
 
-Automated testing was done using the Django Rest Framework APITestCase.
+Automated testing was done using the Django Rest Framework APITestCase and Coverage.
 
-- Tests summary
-
-<details><summary>Individual app report</summary>
-
-</details>
-
-<details><summary>Combined report</summary>
-
-</details>
+The Coverage report showed 83% coverage of code throughout the project.
 
 
 ##### Back to [top](#table-of-contents)
